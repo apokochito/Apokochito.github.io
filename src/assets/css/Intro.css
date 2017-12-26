@@ -1,0 +1,18 @@
+img {
+  width: 100px;
+  height: 140px;
+}
+
+#cv {
+  padding: 4% 5% 3% 0%;
+}
+
+#profile {
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+
+#cv p {
+  padding: 4.3% 5% 3% 0%;
+}

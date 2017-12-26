@@ -1,0 +1,61 @@
+.App {
+  padding: 5% 15% 1%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  text-align: justify;
+}
+
+span {
+  color: #a5535f;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 434px) and (max-width: 695px) {
+  p,
+  article {
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 434px) {
+  p,
+  article {
+    font-size: small;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 381px) {
+  p,
+  article {
+    font-size: xx-small;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  #welcome {
+    padding: 24vmin 0vmax 10vmax 0vmax;
+    margin: 16vmin 0% 17vmin 0%;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #welcome {
+    padding: 9vmin 0 14vmin 0;
+    margin: 9vmax 0 10vmin 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  #welcome {
+    padding: 22vmin 0 35vmin 0;
+    margin: 18vmin 0 35vmin 0;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1800px) {
+  #welcome {
+    padding: 15vmin 0 38vmin 0;
+    margin: 15vmin 0 20vmin 0;
+  }
+}

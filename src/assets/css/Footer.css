@@ -1,0 +1,10 @@
+#bottom-footer {
+  text-align: center;
+  font-size: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#bottom-footer p {
+  margin: inherit;
+}

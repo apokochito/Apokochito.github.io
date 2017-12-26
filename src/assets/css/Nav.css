@@ -1,0 +1,28 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar a {
+  margin: 0px 10px;
+}
+
+#navbar a:hover {
+  color: #a5535f;
+}
+
+@media screen and (min-width: 434px) and (max-width: 695px) {
+  #navbar {
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 434px) {
+  #navbar {
+    font-size: small;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 381px) {
+  #navbar {
+    font-size: xx-small;
+  }
+}
