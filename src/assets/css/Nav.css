@@ -4,11 +4,16 @@
 }
 
 #navbar a {
-  margin: 0px 10px;
+  padding: 10px;
+}
+
+#background-mode {
+  padding: 0px 10px 10px 0px;
 }
 
 #navbar a:hover {
   color: #a5535f;
+  transition: all 0.4s ease-in-out;
 }
 
 @media screen and (min-width: 434px) and (max-width: 695px) {

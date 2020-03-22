@@ -1,8 +1,8 @@
 body {
-  margin: 0;
   font-family: spirequal;
-  font-size: 1.8em;
-  font-weight: 500;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 600;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,7 +10,7 @@ body {
 
 @font-face {
   font-family: "spirequal";
-  src: local("spirequal"), url(./../fonts/spirequal.ttf) format("truetype");
+  src: local("spirequal"), url(./../fonts/nimbusmono.otf) format("truetype");
 }
 
 #root {

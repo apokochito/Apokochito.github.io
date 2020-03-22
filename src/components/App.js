@@ -18,8 +18,8 @@ function App() {
       <Nav />
       <Main />
       <Intro />
-      {notes.map(note => (
-        <Note title={note.title} content={note.content} />
+      {notes.map((note, i) => (
+        <Note title={note.title} key={i} content={note.content} />
       ))}
       <hr></hr>
       <Footer />

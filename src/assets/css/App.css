@@ -1,5 +1,5 @@
 .App {
-  padding: 5% 15% 1%;
+  padding: 5% 13% 1%;
 }
 
 a {
@@ -14,6 +14,10 @@ p {
 span {
   color: #a5535f;
   font-weight: bold;
+}
+
+#profile p {
+  margin: 0px;
 }
 
 @media screen and (min-width: 434px) and (max-width: 695px) {

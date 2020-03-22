@@ -5,13 +5,13 @@ class Nav extends Component {
     return (
       <div id="navbar">
         <div>
-          <a href="./">Diana Pinto</a>
+          <a href="./">Home</a>
         </div>
         <div>
           <nav>
-            <a href="./">About me</a>
-            <a href="/">Treasures</a>
-            <a href="/">Projects</a>
+            <a href="./">About</a>
+            <a href="/">Blog</a>
+            <a href="/">Work</a>
           </nav>
         </div>
         <div id="background-mode">Dark</div>
