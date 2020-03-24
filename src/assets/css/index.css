@@ -1,6 +1,5 @@
 body {
   font-family: spirequal;
-  font-size: 1.2em;
   color: #333;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -10,7 +9,7 @@ body {
 
 @font-face {
   font-family: "spirequal";
-  src: local("spirequal"), url(./../fonts/nimbusmono.otf) format("truetype");
+  src: local("spirequal"), url(./../fonts/raleway_thin.ttf) format("truetype");
 }
 
 #root {

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./../assets/css/Nav.css";
+import { Link } from "react-router-dom";
+
 class Nav extends Component {
   render() {
     return (
@@ -9,9 +11,15 @@ class Nav extends Component {
         </div>
         <div>
           <nav>
-            <a href="./">About</a>
-            <a href="/">Blog</a>
-            <a href="/">Work</a>
+            <Link style={{ padding: "0px 10px 0px 10px" }} to="/about">
+              About
+            </Link>
+            <Link style={{ padding: "0px 10px 0px 10px" }} to="/blog">
+              Blog
+            </Link>
+            <Link style={{ padding: "0px 10px 0px 10px" }} to="/work">
+              Work
+            </Link>
           </nav>
         </div>
         <div id="background-mode">Dark</div>

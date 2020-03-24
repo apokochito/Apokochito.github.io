@@ -1,30 +1,28 @@
 import React, { Component } from "react";
 import "./../assets/css/Intro.css";
+import Button from "react-bootstrap/Button";
 class Intro extends Component {
+  btnClick() {
+    window.open(
+      "https://www.dropbox.com/s/2wkudf8iyra6ckz/Diana%20Pinto%20CV.pdf?dl=0"
+    );
+  }
   render() {
     return (
-      <React.Fragment>
-        <article>
+      <div id="profile">
+        <article id="firstArticle">
           <span>About me</span>
         </article>
-        <div id="profile">
-          <div id="cv">
-            <img
-              src={require("./../assets/images/profile.png")}
-              alt="profile"
-            />
-            <button>CV</button>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet
-            ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut
-            potenti pellentesque quisque. In eget sapien sed, sit duis
-            vestibulum ultricies, placerat morbi amet vel, nullam in in lorem
-            vel. In molestie elit dui dictum, praesent nascetur pulvinar sed, in
-            dolor pede in aliquam, risus nec err
-          </p>
-        </div>
-      </React.Fragment>
+        <img src={require("./../assets/images/profile2.jpeg")} alt="profile" />
+        <Button
+          variant="outline-link"
+          size="lg"
+          onClick={this.btnClick.bind(this)}
+          type="button"
+        >
+          CV
+        </Button>
+      </div>
     );
   }
 }

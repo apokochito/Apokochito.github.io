@@ -5,7 +5,7 @@ class Note extends Component {
     const note = this.props;
     return (
       <React.Fragment>
-        <article>
+        <article id="notesArticle">
           <span>{note.title}</span>
           <p>{note.content}</p>
         </article>
