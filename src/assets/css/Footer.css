@@ -1,9 +1,5 @@
 #bottom-footer {
   text-align: center;
   display: flex;
-  justify-content: space-between;
-}
-
-#bottom-footer p {
-  margin-top: 0px;
+  justify-content: space-evenly;
 }

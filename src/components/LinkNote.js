@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import "./../assets/css/Note.css";
-class Note extends Component {
+import "./../assets/css/NormalNote.css";
+class LinkNote extends Component {
   render() {
     const note = this.props;
     return (
       <React.Fragment>
         <article id="notesArticle">
           <span>{note.title}</span>
-          <p>{note.content}</p>
+          <div>{note.content}</div>
         </article>
       </React.Fragment>
     );
   }
 }
-export default Note;
+export default LinkNote;

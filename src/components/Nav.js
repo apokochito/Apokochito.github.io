@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 
 class Nav extends Component {
   render() {
+    const dark = () => {
+      var element = document.body;
+      return element.classList.toggle("dark-mode");
+    };
     return (
       <div id="navbar">
         <div>
@@ -22,7 +26,9 @@ class Nav extends Component {
             </Link>
           </nav>
         </div>
-        <div id="background-mode">Dark</div>
+        <div id="background-mode">
+          <button>Toggle dark mode {dark()}</button>
+        </div>
       </div>
     );
   }

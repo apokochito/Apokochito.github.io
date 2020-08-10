@@ -1,6 +1,7 @@
 body {
   font-family: spirequal;
   color: #333;
+  background-color: #fff;
   font-weight: 600;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
@@ -10,8 +11,4 @@ body {
 @font-face {
   font-family: "spirequal";
   src: local("spirequal"), url(./../fonts/raleway_thin.ttf) format("truetype");
-}
-
-#root {
-  background-color: #fff;
 }

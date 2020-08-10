@@ -1,35 +1,35 @@
-.App {
-  padding: 2% 25% 1%;
+.box-menu {
+  grid-area: menu;
+  align-self: center;
 }
 
-hr {
-  margin: 0;
-  padding: 0;
+.box-presentation {
+  grid-area: presentation;
+  align-self: center;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.box-footer {
+  grid-area: footer;
+  align-self: flex-end;
 }
 
-a:focus,
-a:active,
-a:hover {
-  color: #a5535f;
-  text-decoration: none;
-  transition: 0s;
+.wrapper {
+  margin: 0 30vh 0 30vh;
+  width: auto;
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "presentation"
+    "footer";
+  grid-template-rows: 180px auto auto;
+  grid-gap: 5px;
+  height: 100vh;
 }
 
-p {
-  text-align: justify;
-}
-
-span {
-  color: #a5535f;
-}
+/*
 
 #profile p {
-  margin: 0px;
+  margin: 0;
 }
 
 ul {
@@ -42,111 +42,4 @@ ul {
 li {
   padding: 0 10px 0 0;
 }
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
 */
-
-@media (min-width: 1281px) {
-  p,
-  article,
-  #bottom-footer,
-  #navbar {
-    font-size: x-large;
-  }
-  #welcome {
-    padding: 25% 0 38% 0;
-    margin: 13% 0 20% 0;
-  }
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  p,
-  article,
-  #bottom-footer,
-  #navbar {
-    font-size: large;
-  }
-  #welcome {
-    padding: 19% 0 30% 0;
-    margin: 13% 0 20% 0;
-  }
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  p,
-  article,
-  #bottom-footer,
-  #navbar {
-    font-size: large;
-  }
-  #welcome {
-    padding: 55% 0 130% 0;
-    margin: 13% 0 20% 0;
-  }
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  p,
-  article,
-  #bottom-footer,
-  #navbar {
-    font-size: large;
-  }
-  #welcome {
-    padding: 24% 0 55% 0;
-    margin: 13% 0 20% 0;
-  }
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  p,
-  article,
-  #bottom-footer,
-  #navbar {
-    font-size: medium;
-  }
-  #welcome {
-    padding: 18% 0 29% 0;
-    margin: 13% 0 20% 0;
-  }
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  p,
-  article,
-  #bottom-footer,
-  #navbar {
-    font-size: xx-small;
-  }
-  #welcome {
-    padding: 45% 0 153% 0;
-    margin: 13% 0 20% 0;
-  }
-}

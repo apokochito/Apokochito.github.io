@@ -1,7 +1,7 @@
 import React from "react";
 import "./../assets/css/App.css";
 import Nav from "./Nav";
-import Note from "./Note";
+import Note from "./NormalNote";
 import Footer from "./Footer";
 import Intro from "./Intro";
 import Main from "./Main";
@@ -13,13 +13,14 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faTwitter
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import NormalNote from "./NormalNote";
 
 function App() {
   const IconLinks = ({ href, icon }) => (
     <li>
-      <a href={href}>
+      <a href={href} target="_blank">
         <FontAwesomeIcon icon={icon} />
       </a>
     </li>
@@ -27,7 +28,7 @@ function App() {
   const contact = (
     <React.Fragment>
       <ul>
-        <IconLinks href="https://twitter.com/JuanCrg90" icon={faTwitter} />
+        <IconLinks href="https://twitter.com/apokochito" icon={faTwitter} />
         <IconLinks
           href="https://www.linkedin.com/in/dianaepinto/"
           icon={faLinkedin}
@@ -37,34 +38,50 @@ function App() {
       </ul>
     </React.Fragment>
   );
+
+  const btnClick = (href) => (
+    <p>
+      <a href={href}></a>
+    </p>
+  );
+  const links = [
+    { link: "https://agilethought.com/" },
+    { link: "" },
+    { link: "" },
+  ];
   const notes = [
     { title: "Contact", content: contact },
-    { title: "Companies", content: "content3" },
+    { title: "Companies", content: "I've worked at" },
     { title: "Communities", content: "content4" },
     { title: "Education", content: "content5" },
-    { title: "Technologies I have worked with", content: "content2" }
+    { title: "Technologies I have worked with", content: "content2" },
   ];
   return (
-    <div className="App">
+    <div className="wrapper">
       <Router>
-        <Nav />
-        <Route exact path="/">
-          <Main />
-        </Route>
-        <Route path="/about">
-          <Intro />
-          {notes.map((note, i) => (
-            <Note title={note.title} key={i} content={note.content} />
-          ))}
-        </Route>
-        <Route path="/blog">
-          <Blog />
-        </Route>
-        <Route path="/work">
-          <Work />
-        </Route>
-        <hr></hr>
-        <Footer />
+        <div className="box-menu">
+          <Nav />
+        </div>
+        <div className="box-presentation">
+          <Route exact path="/">
+            <Main />
+          </Route>
+          <Route path="/about">
+            <Intro />
+            {notes.map((note, i) => (
+              <NormalNote title={note.title} key={i} content={note.content} />
+            ))}
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/work">
+            <Work />
+          </Route>
+        </div>
+        <div className="box-footer">
+          <Footer />
+        </div>
       </Router>
     </div>
   );

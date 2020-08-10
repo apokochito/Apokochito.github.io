@@ -1,5 +1,14 @@
+#profile {
+  text-align: -webkit-center;
+}
+
 img {
-  width: 125px;
+  width: 10px;
+  border-radius: 100%;
+  opacity: 1;
+}
+/*img {
+  width: 95px;
   margin-top: 20px;
   border-radius: 100%;
   opacity: 1;
@@ -9,16 +18,12 @@ img {
   padding: 0.5% 5% 3% 0%;
 }
 
-#profile {
-  text-align: center;
-  display: grid;
-  text-align: -webkit-center;
-  padding-bottom: 6%;
+#photoAndCV {
+  display: flex;
+  flex-direction: column;
 }
 
-#cv p {
-  padding: 4.3% 5% 3% 0%;
-}
+
 
 #firstArticle {
   padding-top: 10%;
@@ -29,11 +34,12 @@ button {
 }
 
 .btn-lg {
-  padding: 0.5rem 0 0 0;
+  padding: 1.25rem 0 0 0;
   font-weight: 600;
   text-align: center;
-  font-size: large;
+  font-size: medium;
   color: #333;
   border: 0;
   width: fit-content;
 }
+*/
