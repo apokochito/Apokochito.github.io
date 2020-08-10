@@ -3,6 +3,10 @@
   "description": "My portfolio",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": "13.8.0",
+    "npm": "6.13.17"
+  },
   "author": "Apokochito",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
