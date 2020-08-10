@@ -9,14 +9,11 @@ class Intro extends Component {
   }
   render() {
     return (
-      <div id="profile">
-        <article id="firstArticle">
-          <span>About me</span>
-        </article>
-        <div id="photoAndCV">
+      <div>
+        <div className="profile">
           <img
             src={require("./../assets/images/profile2.jpeg")}
-            alt="profile"
+            alt="Profile Picture"
           />
           <Button
             variant="outline-link"

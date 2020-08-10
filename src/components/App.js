@@ -1,7 +1,6 @@
 import React from "react";
 import "./../assets/css/App.css";
 import Nav from "./Nav";
-import Note from "./NormalNote";
 import Footer from "./Footer";
 import Intro from "./Intro";
 import Main from "./Main";
@@ -15,7 +14,7 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import NormalNote from "./NormalNote";
+import Note from "./Note";
 
 function App() {
   const IconLinks = ({ href, icon }) => (
@@ -28,33 +27,35 @@ function App() {
   const contact = (
     <React.Fragment>
       <ul>
-        <IconLinks href="https://twitter.com/apokochito" icon={faTwitter} />
+        <IconLinks href="mailto:diana.apolinar@hotmail.com" icon={faEnvelope} />
         <IconLinks
           href="https://www.linkedin.com/in/dianaepinto/"
           icon={faLinkedin}
         />
+        <IconLinks href="https://twitter.com/apokochito" icon={faTwitter} />
         <IconLinks href="https://github.com/apokochito" icon={faGithub} />
-        <IconLinks href="mailto:diana.apolinar@hotmail.com" icon={faEnvelope} />
       </ul>
     </React.Fragment>
   );
-
-  const btnClick = (href) => (
-    <p>
-      <a href={href}></a>
-    </p>
-  );
-  const links = [
-    { link: "https://agilethought.com/" },
-    { link: "" },
-    { link: "" },
-  ];
   const notes = [
     { title: "Contact", content: contact },
-    { title: "Companies", content: "I've worked at" },
-    { title: "Communities", content: "content4" },
-    { title: "Education", content: "content5" },
-    { title: "Technologies I have worked with", content: "content2" },
+    {
+      title: "Companies",
+      content: "I've worked at 4thSource an Agile thought company.",
+    },
+    {
+      title: "Communities",
+      content: "I'm a volunteer at Women Who Code Colima - Codificadas.",
+    },
+    {
+      title: "Education",
+      content:
+        "I'm a telematics engineer and I'm a master's student in Computer Security.",
+    },
+    {
+      title: "Technologies I have worked with",
+      content: "Java with Spring mostly.",
+    },
   ];
   return (
     <div className="wrapper">
@@ -68,9 +69,11 @@ function App() {
           </Route>
           <Route path="/about">
             <Intro />
-            {notes.map((note, i) => (
-              <NormalNote title={note.title} key={i} content={note.content} />
-            ))}
+            <div className="notes">
+              {notes.map((note, i) => (
+                <Note title={note.title} key={i} content={note.content} />
+              ))}
+            </div>
           </Route>
           <Route path="/blog">
             <Blog />

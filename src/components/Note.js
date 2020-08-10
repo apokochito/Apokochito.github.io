@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./../assets/css/NormalNote.css";
-class NormalNote extends Component {
+import "./../assets/css/Note.css";
+class Note extends Component {
   render() {
     const note = this.props;
     return (
       <React.Fragment>
-        <article id="notesArticle">
+        <article id="note">
           <span>{note.title}</span>
           <div>{note.content}</div>
         </article>
@@ -13,4 +13,4 @@ class NormalNote extends Component {
     );
   }
 }
-export default NormalNote;
+export default Note;

@@ -6,11 +6,24 @@
 .box-presentation {
   grid-area: presentation;
   align-self: center;
+  margin-bottom: 60px;
 }
 
 .box-footer {
   grid-area: footer;
   align-self: flex-end;
+}
+
+li {
+  float: left;
+  padding: 5px 10px 0 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -25,21 +38,3 @@
   grid-gap: 5px;
   height: 100vh;
 }
-
-/*
-
-#profile p {
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-li {
-  padding: 0 10px 0 0;
-}
-*/

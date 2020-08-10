@@ -27,6 +27,7 @@ class Nav extends Component {
           </nav>
         </div>
         <div id="background-mode">
+          <p>Dark</p>
           {/*<button>Toggle dark mode {dark()}</button>*/}
         </div>
       </div>
