@@ -1,23 +1,19 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { Component, useState } from "react";
 import "./../assets/css/Nav.css";
 import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./globalStyles";
-import { lightTheme, darkTheme } from "./Themes";
 
 class Nav extends Component {
+  constructor() {
+    super();
+    this.state = {};
+    this.onInputChange = this.onInputChange.bind(this);
+  }
+  onInputChange(event) {
+    console.log(event.target);
+  }
   render() {
-    /*
-    const [theme, setTheme] = useState("light");
-    const themeToggler = () => {
-      theme === "light" ? setTheme("dark") : setTheme("light");
-    };*/
     return (
       <div id="navbar">
-        <div>
-          <a href="./">Home</a>
-        </div>
         <div>
           <nav>
             <Link style={{ padding: "0px 10px 0px 10px" }} to="/about">
@@ -30,17 +26,6 @@ class Nav extends Component {
               Work
             </Link>
           </nav>
-        </div>
-        <div id="background-mode">
-          <Button
-            type="button"
-            variant="outline-light"
-            size="sm"
-            style={{ width: "auto" }}
-            /*onClick={themeToggler}*/
-          >
-            🌚 / 🌝
-          </Button>
         </div>
       </div>
     );

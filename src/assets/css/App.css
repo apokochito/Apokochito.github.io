@@ -1,6 +1,8 @@
 .box-menu {
   grid-area: menu;
   align-self: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .box-presentation {

@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./GlobalStyles";
+import { lightTheme, darkTheme } from "./Themes";
 import "./../assets/css/App.css";
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -9,6 +12,7 @@ import Work from "./Work";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Button from "react-bootstrap/Button";
 import {
   faGithub,
   faLinkedin,
@@ -16,7 +20,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Note from "./Note";
 
-function App() {
+const App = () => {
+  const [theme, setTheme] = useState("light");
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
   const IconLinks = ({ href, icon }) => (
     <li>
       <a href={href} target="_blank" rel="noopener noreferrer">
@@ -58,36 +67,55 @@ function App() {
     },
   ];
   return (
-    <div className="wrapper">
-      <Router>
-        <div className="box-menu">
-          <Nav />
-        </div>
-        <div className="box-presentation">
-          <Route exact path="/">
-            <Main />
-          </Route>
-          <Route path="/about">
-            <Intro />
-            <div className="notes">
-              {notes.map((note, i) => (
-                <Note title={note.title} key={i} content={note.content} />
-              ))}
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <>
+        <GlobalStyles />
+        <div className="wrapper">
+          <Router>
+            <div className="box-menu">
+              <div>
+                <a href="./">Home</a>
+              </div>
+              <Nav />
+              <div id="background-mode">
+                <Button
+                  type="button"
+                  variant="outline-light"
+                  size="sm"
+                  style={{ width: "auto" }}
+                  onClick={themeToggler}
+                >
+                  🌚 / 🌝
+                </Button>
+              </div>
             </div>
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route path="/work">
-            <Work />
-          </Route>
+            <div className="box-presentation">
+              <Route exact path="/">
+                <Main />
+              </Route>
+              <Route path="/about">
+                <Intro />
+                <div className="notes">
+                  {notes.map((note, i) => (
+                    <Note title={note.title} key={i} content={note.content} />
+                  ))}
+                </div>
+              </Route>
+              <Route path="/blog">
+                <Blog />
+              </Route>
+              <Route path="/work">
+                <Work />
+              </Route>
+            </div>
+            <div className="box-footer">
+              <Footer />
+            </div>
+          </Router>
         </div>
-        <div className="box-footer">
-          <Footer />
-        </div>
-      </Router>
-    </div>
+      </>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
