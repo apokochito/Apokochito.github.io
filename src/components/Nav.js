@@ -1,13 +1,18 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import "./../assets/css/Nav.css";
 import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./globalStyles";
+import { lightTheme, darkTheme } from "./Themes";
 
 class Nav extends Component {
   render() {
-    const dark = () => {
-      var element = document.body;
-      return element.classList.toggle("dark-mode");
-    };
+    /*
+    const [theme, setTheme] = useState("light");
+    const themeToggler = () => {
+      theme === "light" ? setTheme("dark") : setTheme("light");
+    };*/
     return (
       <div id="navbar">
         <div>
@@ -27,8 +32,15 @@ class Nav extends Component {
           </nav>
         </div>
         <div id="background-mode">
-          <p>Dark</p>
-          {/*<button>Toggle dark mode {dark()}</button>*/}
+          <Button
+            type="button"
+            variant="outline-light"
+            size="sm"
+            style={{ width: "auto" }}
+            /*onClick={themeToggler}*/
+          >
+            🌚 / 🌝
+          </Button>
         </div>
       </div>
     );

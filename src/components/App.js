@@ -19,7 +19,7 @@ import Note from "./Note";
 function App() {
   const IconLinks = ({ href, icon }) => (
     <li>
-      <a href={href} target="_blank">
+      <a href={href} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={icon} />
       </a>
     </li>

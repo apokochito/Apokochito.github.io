@@ -13,7 +13,7 @@ class Intro extends Component {
         <div className="profile">
           <img
             src={require("./../assets/images/profile2.jpeg")}
-            alt="Profile Picture"
+            alt="Profile"
           />
           <Button
             variant="outline-link"
