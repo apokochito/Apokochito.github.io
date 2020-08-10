@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import {
   faGithub,
   faLinkedin,
@@ -74,7 +75,9 @@ const App = () => {
           <Router>
             <div className="box-menu">
               <div>
-                <a href="./">Home</a>
+                <Link style={{ padding: "0px 10px 0px 10px" }} to="./">
+                  About
+                </Link>
               </div>
               <Nav />
               <div id="background-mode">
