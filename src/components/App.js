@@ -82,13 +82,18 @@ const App = () => {
               <Nav />
               <div id="background-mode">
                 <Button
+                  id="theme"
                   type="button"
                   variant="outline-light"
-                  size="sm"
-                  style={{ width: "auto" }}
+                  style={{
+                    width: "auto",
+                    margin: 0,
+                    border: 0,
+                    padding: 0,
+                  }}
                   onClick={themeToggler}
                 >
-                  🌚 / 🌝
+                  ☾ · ☀
                 </Button>
               </div>
             </div>

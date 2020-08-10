@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./../assets/css/Intro.css";
-import Button from "react-bootstrap/Button";
 class Intro extends Component {
   btnClick() {
     window.open(
@@ -15,14 +14,9 @@ class Intro extends Component {
             src={require("./../assets/images/profile2.jpeg")}
             alt="Profile"
           />
-          <Button
-            variant="outline-link"
-            size="lg"
-            onClick={this.btnClick.bind(this)}
-            type="button"
-          >
+          <button id="cv" onClick={this.btnClick.bind(this)} type="button">
             CV
-          </Button>
+          </button>
         </div>
       </div>
     );

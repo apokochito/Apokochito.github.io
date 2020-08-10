@@ -20,12 +20,3 @@ a:hover {
   text-decoration: none;
   transition: 0s;
 }
-
-.oscuro {
-  background-color: #333333;
-  color: white;
-}
-
-button {
-  min-width: auto;
-}
