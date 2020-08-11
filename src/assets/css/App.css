@@ -1,6 +1,6 @@
 .box-menu {
   grid-area: menu;
-  align-self: center;
+  margin-top: 10%;
   display: flex;
   justify-content: space-between;
 }
