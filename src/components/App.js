@@ -87,13 +87,16 @@ const App = () => {
                   variant="outline-light"
                   style={{
                     width: "auto",
+                    height: "30px",
                     margin: 0,
                     border: 0,
                     padding: 0,
                   }}
                   onClick={themeToggler}
                 >
-                  ☾ · ☀
+                  <h1 id="technique-one">
+                    <span>CSS-Tricks</span>
+                  </h1>
                 </Button>
               </div>
             </div>
