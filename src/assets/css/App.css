@@ -29,7 +29,7 @@ ul {
 }
 
 .wrapper {
-  padding: 0 auto 0 auto;
+  margin: 0 10% 0 10%;
   width: auto;
   display: grid;
   grid-template-areas:
