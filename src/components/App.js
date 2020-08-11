@@ -76,7 +76,7 @@ const App = () => {
             <div className="box-menu">
               <div>
                 <Link style={{ padding: "0px 10px 0px 10px" }} to="./">
-                  About
+                  Home
                 </Link>
               </div>
               <Nav />
