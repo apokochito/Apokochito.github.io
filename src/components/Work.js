@@ -5,21 +5,15 @@ class Work extends Component {
   render() {
     return (
       <div id="topics">
-        <Nav justify variant="tabs" defaultActiveKey="Certifications">
+        <Nav justify variant="tabs" defaultActiveKey="Projects">
           <Nav.Item>
-            <Nav.Link id="hey" eventKey="OpenSource">
-              OpenSource
-            </Nav.Link>
+            <Nav.Link eventKey="OpenSource">OpenSource</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link id="hey" eventKey="Certifications">
-              Certifications
-            </Nav.Link>
+            <Nav.Link eventKey="Certifications">Certifications</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link id="hey" eventKey="Projects">
-              Projects
-            </Nav.Link>
+            <Nav.Link eventKey="Projects">Projects</Nav.Link>
           </Nav.Item>
         </Nav>
       </div>

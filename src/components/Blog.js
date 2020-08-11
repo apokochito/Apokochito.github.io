@@ -5,7 +5,7 @@ class Blog extends Component {
   render() {
     return (
       <div id="topics">
-        <Nav justify variant="tabs" defaultActiveKey="SideProjects">
+        <Nav justify variant="tabs" defaultActiveKey="Slides">
           <Nav.Item>
             <Nav.Link eventKey="Posts">Posts</Nav.Link>
           </Nav.Item>
