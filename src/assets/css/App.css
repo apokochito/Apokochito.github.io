@@ -7,8 +7,7 @@
 
 .box-presentation {
   grid-area: presentation;
-  margin-top: 10%;
-  margin-bottom: 60px;
+  margin: 7% 0 60px 0;
 }
 
 .box-footer {
@@ -36,7 +35,11 @@ ul {
     "menu"
     "presentation"
     "footer";
-  grid-template-rows: 10% auto auto;
+  grid-template-rows: 13% auto auto;
   grid-gap: 5px;
   height: 100vh;
+}
+
+#main-text {
+  margin-top: 100px;
 }

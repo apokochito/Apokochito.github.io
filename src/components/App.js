@@ -99,7 +99,9 @@ const App = () => {
             </div>
             <div className="box-presentation">
               <Route exact path="/">
-                <Main />
+                <div id="main-text">
+                  <Main />
+                </div>
               </Route>
               <Route path="/about">
                 <Intro />
