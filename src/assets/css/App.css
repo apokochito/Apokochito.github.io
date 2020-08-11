@@ -7,7 +7,7 @@
 
 .box-presentation {
   grid-area: presentation;
-  align-self: center;
+  margin-top: 10%;
   margin-bottom: 60px;
 }
 
