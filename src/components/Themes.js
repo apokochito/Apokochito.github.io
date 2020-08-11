@@ -2,8 +2,8 @@ import ImgDark from "../assets/images/moon2.svg";
 import ImgLight from "../assets/images/sun.svg";
 export const lightTheme = {
   body: "#FFF",
-  text: "#363537",
-  background: "#363537",
+  text: "#000",
+  background: "#00",
   color: "#FFF",
   image: ImgLight,
   invert: "none",
