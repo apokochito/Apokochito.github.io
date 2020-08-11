@@ -4,8 +4,9 @@
 }
 
 #navbar a:hover {
-  color: #a5535f;
+  color: #b76e79;
   transition: all 0.4s ease-in-out;
+  text-decoration: none;
 }
 
 a {
@@ -16,7 +17,7 @@ a {
 a:focus,
 a:active,
 a:hover {
-  color: #a5535f;
+  color: #b76e79;
   text-decoration: none;
   transition: 0s;
 }

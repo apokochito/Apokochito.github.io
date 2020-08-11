@@ -74,10 +74,8 @@ const App = () => {
         <div className="wrapper">
           <Router>
             <div className="box-menu">
-              <div>
-                <Link style={{ padding: "0px 10px 0px 10px" }} to="./">
-                  Home
-                </Link>
+              <div id="home">
+                <Link to="./">Home</Link>
               </div>
               <Nav />
               <div id="background-mode">

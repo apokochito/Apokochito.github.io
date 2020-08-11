@@ -43,3 +43,12 @@ ul {
 #main-text {
   margin-top: 100px;
 }
+
+#home {
+  padding: "0px";
+}
+#home a:hover {
+  color: #b76e79;
+  text-decoration: none;
+  transition: 0s;
+}

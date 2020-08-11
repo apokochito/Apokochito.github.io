@@ -1,3 +1,5 @@
-#profile {
-  text-align: -webkit-center;
+#topics {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }

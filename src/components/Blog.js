@@ -1,29 +1,21 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import "./../assets/css/Blog.css";
-import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
-import ToggleButton from "react-bootstrap/ToggleButton";
+import Nav from "react-bootstrap/Nav";
 class Blog extends Component {
   render() {
     return (
-      <div id="profile">
-        <ToggleButtonGroup type="radio" name="options" defaultValue={1}>
-          <ToggleButton
-            value={1}
-            variant="secondary"
-            size="sm"
-            style={{ fontWeight: "bold" }}
-          >
-            Posts
-          </ToggleButton>
-          <ToggleButton
-            value={2}
-            variant="secondary"
-            size="sm"
-            style={{ fontWeight: "bold" }}
-          >
-            Slides
-          </ToggleButton>
-        </ToggleButtonGroup>
+      <div id="topics">
+        <Nav justify variant="tabs" defaultActiveKey="SideProjects">
+          <Nav.Item>
+            <Nav.Link eventKey="Posts">Posts</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="SideProjects">SideProjects</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="Slides">Slides</Nav.Link>
+          </Nav.Item>
+        </Nav>
       </div>
     );
   }

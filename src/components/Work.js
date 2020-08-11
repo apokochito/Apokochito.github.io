@@ -1,29 +1,27 @@
 import React, { Component } from "react";
 import "./../assets/css/Work.css";
-import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
-import ToggleButton from "react-bootstrap/ToggleButton";
+import Nav from "react-bootstrap/Nav";
 class Work extends Component {
   render() {
     return (
-      <div id="profile">
-        <ToggleButtonGroup type="radio" name="options" defaultValue={1}>
-          <ToggleButton
-            value={1}
-            variant="secondary"
-            size="sm"
-            style={{ fontWeight: "bold" }}
-          >
-            Certifications
-          </ToggleButton>
-          <ToggleButton
-            value={2}
-            variant="secondary"
-            size="sm"
-            style={{ fontWeight: "bold" }}
-          >
-            OpenSource
-          </ToggleButton>
-        </ToggleButtonGroup>
+      <div id="topics">
+        <Nav justify variant="tabs" defaultActiveKey="Certifications">
+          <Nav.Item>
+            <Nav.Link id="hey" eventKey="OpenSource">
+              OpenSource
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link id="hey" eventKey="Certifications">
+              Certifications
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link id="hey" eventKey="Projects">
+              Projects
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
       </div>
     );
   }
