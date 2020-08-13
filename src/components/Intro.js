@@ -8,7 +8,7 @@ class Intro extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ textAlign: "center" }}>
         <div className="profile">
           <img
             src={require("./../assets/images/profile2.jpeg")}
