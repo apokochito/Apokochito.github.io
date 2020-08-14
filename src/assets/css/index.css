@@ -39,7 +39,10 @@ body {
   body {
     font-size: x-large;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: x-large;
+  }
+  div div ul li a {
     font-size: x-large;
   }
 }
@@ -50,7 +53,10 @@ body {
   body {
     font-size: x-large;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: x-large;
+  }
+  div div ul li a {
     font-size: x-large;
   }
 }
@@ -70,7 +76,10 @@ body {
   body {
     font-size: large;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: large;
+  }
+  div div ul li a {
     font-size: large;
   }
 }
@@ -81,10 +90,10 @@ body {
   body {
     font-size: large;
   }
-  div ul li a {
+  div div ul div li a {
     font-size: large;
   }
-  div ul div li a {
+  div div ul li a {
     font-size: large;
   }
 }
@@ -95,7 +104,10 @@ body {
   body {
     font-size: medium;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: medium;
+  }
+  div div ul li a {
     font-size: medium;
   }
 }
@@ -105,7 +117,10 @@ body {
   body {
     font-size: small;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: small;
+  }
+  div div ul li a {
     font-size: small;
   }
 }
@@ -116,7 +131,10 @@ body {
   body {
     font-size: medium;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: medium;
+  }
+  div div ul li a {
     font-size: medium;
   }
 }
@@ -126,7 +144,10 @@ body {
   body {
     font-size: small;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: small;
+  }
+  div div ul li a {
     font-size: small;
   }
 }
@@ -137,7 +158,10 @@ body {
   body {
     font-size: medium;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: medium;
+  }
+  div div ul li a {
     font-size: medium;
   }
 }
@@ -147,10 +171,10 @@ body {
   body {
     font-size: smaller;
   }
-  div ul li a {
+  div div ul div li a {
     font-size: smaller;
   }
-  div ul div li a {
+  div div ul li a {
     font-size: smaller;
   }
 }
@@ -170,7 +194,10 @@ body {
   body {
     font-size: medium;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: medium;
+  }
+  div div ul li a {
     font-size: medium;
   }
 }
@@ -180,7 +207,10 @@ body {
   body {
     font-size: small;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: small;
+  }
+  div div ul li a {
     font-size: small;
   }
 }
@@ -200,7 +230,10 @@ body {
   body {
     font-size: medium;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: medium;
+  }
+  div div ul li a {
     font-size: medium;
   }
 }
@@ -210,7 +243,10 @@ body {
   body {
     font-size: medium;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: medium;
+  }
+  div div ul li a {
     font-size: medium;
   }
 }
@@ -230,7 +266,10 @@ body {
   body {
     font-size: medium;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: medium;
+  }
+  div div ul li a {
     font-size: medium;
   }
 }
@@ -240,7 +279,10 @@ body {
   body {
     font-size: smaller;
   }
-  div ul li a {
+  div div ul div li a {
+    font-size: smaller;
+  }
+  div div ul li a {
     font-size: smaller;
   }
 }
