@@ -1,23 +1,39 @@
-#navbar {
-  display: flex;
-  justify-content: space-between;
+li {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-#navbar a:hover {
+.active,
+li:hover {
+  color: #b76e79;
+}
+
+.navbar-nav {
+  display: contents;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
   color: #b76e79;
   transition: all 0.4s ease-in-out;
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+#navbarBlock {
+  display: contents;
 }
 
-a:focus,
-a:active,
-a:hover {
-  color: #b76e79;
-  text-decoration: none;
-  transition: 0s;
+.nav-link.disabled {
+  pointer-events: none;
+}
+
+.nav-item {
+  margin: 0 10px 0 10px;
+  padding: 0;
 }

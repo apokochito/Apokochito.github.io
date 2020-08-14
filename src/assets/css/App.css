@@ -1,7 +1,7 @@
 .box-menu {
-  grid-area: menu;
-  margin-top: 10%;
-  display: flex;
+  margin-top: 5%;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
 }
 

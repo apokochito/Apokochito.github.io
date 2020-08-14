@@ -4,7 +4,6 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all 0.50s linear;
   }
   #theme {
     color: ${({ theme }) => theme.text};
@@ -29,5 +28,13 @@ export const GlobalStyles = createGlobalStyle`
   }
   h1#technique-one span {
     display: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    background: ${({ theme }) => theme.body};
+  }
+  li {
+    background-color: ${({ theme }) => theme.body};
   }
   `;

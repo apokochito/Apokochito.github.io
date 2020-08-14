@@ -37,7 +37,10 @@ body {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */
   body {
-    font-size: xx-large;
+    font-size: x-large;
+  }
+  div ul li a {
+    font-size: x-large;
   }
 }
 
@@ -45,6 +48,9 @@ body {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
   body {
+    font-size: x-large;
+  }
+  div ul li a {
     font-size: x-large;
   }
 }
@@ -64,13 +70,19 @@ body {
   body {
     font-size: large;
   }
+  div ul li a {
+    font-size: large;
+  }
 }
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   /* Styles */
   body {
-    font-size: xx-large;
+    font-size: x-large;
+  }
+  div ul li a {
+    font-size: x-large;
   }
 }
 
@@ -80,11 +92,17 @@ body {
   body {
     font-size: medium;
   }
+  div ul li a {
+    font-size: medium;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   /* Styles */
   body {
+    font-size: small;
+  }
+  div ul li a {
     font-size: small;
   }
 }
@@ -95,11 +113,17 @@ body {
   body {
     font-size: medium;
   }
+  div ul li a {
+    font-size: medium;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */
   body {
+    font-size: small;
+  }
+  div ul li a {
     font-size: small;
   }
 }
@@ -110,11 +134,17 @@ body {
   body {
     font-size: medium;
   }
+  div ul li a {
+    font-size: medium;
+  }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */
   body {
+    font-size: medium;
+  }
+  div ul li a {
     font-size: medium;
   }
 }
@@ -134,11 +164,17 @@ body {
   body {
     font-size: medium;
   }
+  div ul li a {
+    font-size: medium;
+  }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */
   body {
+    font-size: small;
+  }
+  div ul li a {
     font-size: small;
   }
 }
@@ -158,11 +194,17 @@ body {
   body {
     font-size: medium;
   }
+  div ul li a {
+    font-size: medium;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */
   body {
+    font-size: medium;
+  }
+  div ul li a {
     font-size: medium;
   }
 }
@@ -182,11 +224,17 @@ body {
   body {
     font-size: medium;
   }
+  div ul li a {
+    font-size: medium;
+  }
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */
   body {
+    font-size: smaller;
+  }
+  div ul li a {
     font-size: smaller;
   }
 }

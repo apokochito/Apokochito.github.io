@@ -3,7 +3,7 @@ import ImgLight from "../assets/images/sun.svg";
 export const lightTheme = {
   body: "#FFF",
   text: "#000",
-  background: "#00",
+  background: "#000",
   color: "#FFF",
   image: ImgLight,
   invert: "none",

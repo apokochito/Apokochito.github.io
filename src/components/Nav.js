@@ -2,25 +2,47 @@ import React, { Component } from "react";
 import "./../assets/css/Nav.css";
 import { Link } from "react-router-dom";
 
-class Nav extends Component {
+class Navb extends Component {
   render() {
+    var li = document.getElementsByTagName("li");
+    document.addEventListener("DOMContentLoaded", function (event) {
+      for (var i = 0; i < li.length; i++) {
+        li[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    });
+
     return (
-      <div id="navbar">
-        <div>
-          <nav>
-            <Link style={{ padding: "0px 10px 0px 10px" }} to="/about">
-              About
+      <div id="navbarBlock">
+        <ul className="navbar-nav">
+          <li className="nav-item active">
+            <Link className="nav-link" to="./">
+              Home
             </Link>
-            <Link style={{ padding: "0px 10px 0px 10px" }} to="/blog">
-              Blog
-            </Link>
-            <Link style={{ padding: "0px 10px 0px 10px" }} to="/work">
-              Work
-            </Link>
-          </nav>
-        </div>
+          </li>
+          <div>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/blog">
+                Blog
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/work">
+                Work
+              </Link>
+            </li>
+          </div>
+        </ul>
       </div>
     );
   }
 }
-export default Nav;
+export default Navb;

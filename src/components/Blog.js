@@ -1,21 +1,23 @@
 import React, { Component } from "react";
 import "./../assets/css/Blog.css";
-import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 class Blog extends Component {
   render() {
     return (
       <div id="topics">
-        <Nav justify variant="tabs" defaultActiveKey="Slides">
-          <Nav.Item>
-            <Nav.Link eventKey="Posts">Posts</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="SideProjects">SideProjects</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="Slides">Slides</Nav.Link>
-          </Nav.Item>
-        </Nav>
+        {/*
+<ul className="navbar-nav">
+          <li className="nav-item">
+            <Link className="nav-link">Posts</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link">SideProjects</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link">Slides</Link>
+          </li>
+        </ul>
+         */}
       </div>
     );
   }
