@@ -82,10 +82,10 @@ body {
 @media only screen and (min-width: 1824px) {
   /* Styles */
   body {
-    font-size: x-large;
+    font-size: large;
   }
   div ul li a {
-    font-size: x-large;
+    font-size: large;
   }
 }
 
@@ -145,10 +145,10 @@ body {
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */
   body {
-    font-size: medium;
+    font-size: smaller;
   }
   div ul li a {
-    font-size: medium;
+    font-size: smaller;
   }
 }
 
