@@ -73,9 +73,6 @@ body {
   div ul li a {
     font-size: large;
   }
-  div ul div li a {
-    font-size: large;
-  }
 }
 
 /* Large screens ----------- */
@@ -85,6 +82,9 @@ body {
     font-size: large;
   }
   div ul li a {
+    font-size: large;
+  }
+  div ul div li a {
     font-size: large;
   }
 }
@@ -148,6 +148,9 @@ body {
     font-size: smaller;
   }
   div ul li a {
+    font-size: smaller;
+  }
+  div ul div li a {
     font-size: smaller;
   }
 }
