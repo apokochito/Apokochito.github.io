@@ -3,7 +3,7 @@ import "./../assets/css/Intro.css";
 class Intro extends Component {
   btnClick() {
     window.open(
-      "https://www.dropbox.com/s/6f7r27cg6012tj5/Diana%20Pinto%20CV.docx?dl=0"
+      "https://www.dropbox.com/s/72i9oiwmi7xw4bi/Diana%20Pinto%20CV.docx?dl=0"
     );
   }
   render() {
