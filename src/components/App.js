@@ -41,7 +41,6 @@ const App = () => {
           href="https://www.linkedin.com/in/dianaepinto/"
           icon={faLinkedin}
         />
-        <IconLinks href="https://twitter.com/apokochito" icon={faTwitter} />
         <IconLinks href="https://github.com/apokochito" icon={faGithub} />
       </ul>
     </React.Fragment>
