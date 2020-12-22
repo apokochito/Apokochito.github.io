@@ -49,7 +49,7 @@ const App = () => {
     { title: "Contact", content: contact },
     {
       title: "Companies",
-      content: "I've worked at 4thSource an Agile thought company.",
+      content: "I've worked at Softtek.",
     },
     {
       title: "Communities",
