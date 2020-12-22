@@ -48,8 +48,8 @@ const App = () => {
   const notes = [
     { title: "Contact", content: contact },
     {
-      title: "Companies",
-      content: "I've worked at Softtek.",
+      title: "Company",
+      content: "I'm currently working at Softtek.",
     },
     {
       title: "Communities",
